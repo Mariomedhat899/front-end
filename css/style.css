@@ -1,0 +1,19 @@
+.header{
+    background: url(../assets/pexels-felixmittermeier-956999.jpg);
+}
+h1,h2 ,h3,h4,h5,h6{
+    font-family: "IBM Plex Sans", sans-serif;
+}
+p{
+    font-family: "Timmana", sans-serif;
+}
+.btn-m{
+    width: fit-content;
+}
+.q p{
+    font-family: "Grey Qo", cursive;
+
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+}
