@@ -1,0 +1,512 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+.navbar-brand{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.my-bg{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../Assets/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+}
+.nav-link{
+    
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+.navbar{
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    color: white;
+    box-shadow: 5px 5px 20px 0px rgb(0, 0, 0);
+}
+.nav-link:focus, .nav-link:hover{
+    color: white;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.nav-link:hover::after, .nav-link.active::after
+ {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.nav-link:hover::after{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    
+}
+.nav-link::after.active{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    color: white;
+    
+}
+
+.my-bg h1::after{
+    content: "";
+    animation: textani 5s infinite ease;
+    -webkit-animation: textani 5s infinite ease;
+}
+@keyframes textani{
+    0%{content: "La|";}
+    5%{ content: "Larr|";}
+    10%{content: "Larry |";}
+    15%{content: "Larry Da|";}
+    20%{content: "Larry Dani|";}
+    25%{content: "Larry Daniels|";}
+    30%{content: "Larry Dani|";}
+    35%{content: "Larry |";}
+    40%{content: "La|";}
+    45%{content: "Dev|";}
+    50%{content: "Devilo|";}
+    55%{content: "Deviloper|";}
+    60%{content: "Devilo|";}
+    65%{content: "Dev|";}
+    70%{content: "De|";}
+    75%{content: "Des|";}
+    80%{content: "Desi|";}
+    85%{content: "Desin|";}
+    90%{content: "Desine|";}
+    100%{content: "Desiner|";}
+
+
+
+}
+.icon-border a{
+    color: white;
+}
+.icon-border{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 8px;
+    margin-left: 10px;
+    
+}
+ .my-f figure::after{
+    content: "";
+    width: 80%;
+    height: 30px;
+    background-image: url(../Assets/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+.my-f figure::before{
+    content: "";
+    width: 10%;
+    height: 100%;
+    background-image: url(../Assets/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+
+    left: -40px;
+    top: 15px;
+}
+.bar-progress1{
+    height: 100%;
+    width: 95%;
+    background-color: black;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.bar{
+    height: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1));
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.bar-progress2{
+    height: 100%;
+    width: 80%;
+    background-color: black;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.bar-progress3{
+    height: 100%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.966);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.my-btn1{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.my-btn1:hover{
+
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(2, 1, 1);
+}
+.my-btn2{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid rgb(2, 1, 1);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.my-btn2:hover{
+    background-color: black;
+    color: white;
+}
+.icon-border-2{
+    background-color: #F7F7F7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 8px;
+    width: fit-content;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.header-context h6::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../Assets/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+.my-bg-2{
+    background-color: #F7F7F7;
+}
+.m-border{
+    border: #F7F7F7 solid 10px ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.m-border:hover .icon-border-2{
+    background-color: black;
+    color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent;
+    color: black;
+}
+.nav-tabs .nav-link{
+    border: none;
+}
+.m-inset{
+    top: 100%;
+}
+.work figcaption{
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+}
+.work figure:hover figcaption{
+    inset: 0;
+}
+.my-h{
+    opacity: 0;
+}
+figure:hover .magnifier{
+    opacity: 1;
+}
+figure:hover h6{
+    opacity: 1;
+}
+.icon-border-2-2{
+    background-color: #000000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 8px;
+    width: fit-content;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.p-c{
+    color: white;
+}
+.my-w{
+    width: 100px;
+    height: 100px;
+    
+}
+.img-b-r-2 {
+    
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    -ms-border-radius: 250px;
+    -o-border-radius: 250px;
+}
+
+.first h6::after{
+    content: "";
+    animation: count 2s  ease forwards;
+    -webkit-animation: count 2s  ease forwards;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+@keyframes count{
+    0%{content: "10";}
+    10%{content: "30";}
+    20%{content: "60";}
+    30%{content: "90";}
+    40%{content: "120";}
+    50%{content: "150";}
+    60%{content: "300";}
+    70%{content: "400";}
+    80%{content: "500";}
+    90%{content: "650";}
+    100%{content: "850";}
+    
+}
+.second h6::after{
+    content: "";
+    animation: count2 2s  ease forwards;
+    -webkit-animation: count2 2s  ease forwards;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+@keyframes count2{
+    0%{content: "0";}
+    10%{content: "20";}
+    20%{content: "40";}
+    30%{content: "60";}
+    40%{content: "80";}
+    50%{content: "120";}
+    60%{content: "140";}
+    70%{content: "180";}
+    90%{content: "200";}
+    100%{content: "230";}
+    
+}
+.third h6::after{
+    content: "";
+    animation: count3 2s  ease forwards;
+    -webkit-animation: count3 2s  ease forwards;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+@keyframes count3{
+    0%{content: "0";}
+    10%{content: "500";}
+    20%{content: "800";}
+    30%{content: "1600";}
+    40%{content: "2800";}
+    50%{content: "5200";}
+    60%{content: "6600";}
+    70%{content: "7700";}
+    90%{content: "8800";}
+    100%{content: "9450";}
+    
+}
+.fourth h6::after{
+    content: "";
+    animation: count4 2s  ease forwards;
+    -webkit-animation: count4 2s  ease forwards;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+@keyframes count4{
+    0%{content: "10";}
+    10%{content: "30";}
+    20%{content: "60";}
+    30%{content: "90";}
+    40%{content: "120";}
+    50%{content: "150";}
+    60%{content: "300";}
+    70%{content: "400";}
+    80%{content: "500";}
+    90%{content: "650";}
+    100%{content: "750";}
+    
+}
+.bg-team{
+    background-color: #F7F7F7;
+}
+.my-p{
+    top: 5px;
+    bottom: 90px;
+    left: 5px;
+    right: 5px;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.438);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.bg-team figure:hover .my-p{
+   opacity: 1;
+   transform: rotateY(360deg);
+   -webkit-transform: rotateY(360deg);
+   -moz-transform: rotateY(360deg);
+   -ms-transform: rotateY(360deg);
+   -o-transform: rotateY(360deg);
+}
+.icons-2{
+    margin-top: 50%;
+}
+.icon-border-3{
+    background-color: rgb(0,0,0);
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    border: #000000 1px solid;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 8px;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.anc{
+    color: white;
+}
+.icon-border-3:hover{
+    background-color: white;
+    border: black 1px solid;
+}
+.icon-border-3:hover a{
+    color: #000000;
+}
+.icon-border-3-2{
+    background-color: #dbdbdb9c;
+    height: fit-content;
+    width: fit-content;
+    left: 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 20px;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.col-hov:hover .icon-border-3-2{
+    background-color: #000000;
+    color: white;
+}
+.form-control{
+    background-color: rgba(0, 0, 0, 0.123);
+}
+.form-control:focus{
+    background-color: rgba(0, 0, 0, 0.123);
+}
+.btn-hov .btn:hover{
+    background-color: white;
+    color: black;
+    border: #000000 1px solid;
+}
+.btn-outline-secondary{
+    background-color: #000000;
+    color: white;
+    font-family: "Poppins", serif;
+    padding: 10px 40px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.page-end{
+    background-color: #1C1C1C;
+    height: 10vh;
+    font-size: 0.8rem;
+    color: rgba(192, 192, 192, 0.527);
+    font-family: "Poppins", serif;
+}
